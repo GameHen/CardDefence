@@ -1,4 +1,9 @@
 #include "SceneManager.h"
+#include "TowerPosEditorScene.h"
+#include "TollgateScene.h"
+#include "TollgateSelectScene.h"
+#include "WinScene.h"
+#include "GameOverScene.h"
 SceneManager* SceneManager::mSceneManager = NULL;
 
 SceneManager::SceneManager()
@@ -37,14 +42,20 @@ void SceneManager::changeScene(EnumSceneType enSceneType)
 	Scene* pScene = NULL;
 	switch (enSceneType)
 	{
-	case en_TollgateScene:
+	case en_TollgateScene:				/*关卡场景*/
+		pScene = TollgateScene::createScene();
 		break;
-	case en_TollgateEditorScene:
+	case en_TollgateEditorScene:		/*编辑场景*/
+		pScene = TowerPosEditorScene::createScene();
 		break;
-	case en_WinScene:
+	case en_WinScene:						/*胜利场景*/
+		pScene = WinScene::createScene();
 		break;
-	case en_GameOverScene:
+	case en_GameOverScene:			/*结束场景*/
+		pScene = GameOverScene::createScene();
 		break;
+	case en_TollgateSelectScene:
+		pScene = TollgateSelectScene::createScene();
 	}
 	if (pScene == NULL)
 		return;

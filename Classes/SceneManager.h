@@ -14,6 +14,7 @@ public:
 		en_TollgateEditorScene,			/*关卡编辑器场景*/
 		en_WinScene,							/*胜利场景*/
 		en_GameOverScene,				/*游戏结束场景*/
+		en_TollgateSelectScene,			/*选择关卡场景*/
 	};
 
 	static SceneManager* getInstance();

@@ -39,7 +39,7 @@ bool PosBase::init(Point pos)
 	return Ret;
 }
 
-bool PosBase::init(Point pos, int isDebug)
+bool PosBase::init(Point pos, bool isDebug)
 {
 	bool Ret = false;
 	do{

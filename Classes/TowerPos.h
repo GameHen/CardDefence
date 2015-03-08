@@ -13,7 +13,7 @@ public:
 	static TowerPos* create(Point pos);
 	static TowerPos* create(Point pos,bool isDebug);
 	bool init(Point pos);
-	bool init(Point pos, int isDebug);
+	bool init(Point pos, bool isDebug);
 
 	virtual bool isClickMe(Point pos) override;
 	void draw(Renderer* renderer, const kmMat4 &transform, bool transformUpdated);

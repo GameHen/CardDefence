@@ -38,7 +38,7 @@ bool TowerPos::init(Point pos)
 	} while (0);
 	return Ret;
 }
-bool TowerPos::init(Point pos, int isDebug)
+bool TowerPos::init(Point pos, bool isDebug)
 {
 	bool Ret = false;
 	do{

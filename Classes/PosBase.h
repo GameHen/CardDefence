@@ -12,7 +12,7 @@ public:
 	static PosBase * create(Point pos);
 	static PosBase * create(Point pos, bool isDebug);
 	bool init(Point pos);
-	bool init(Point pos, int isDebug);
+	bool init(Point pos, bool isDebug);
 
 	CC_SYNTHESIZE(Point, m_pos, Pos);
 

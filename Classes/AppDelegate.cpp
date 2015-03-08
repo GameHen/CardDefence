@@ -30,8 +30,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-	//auto scene = TowerPosEditorScene::createScene();
-	SceneManager::getInstance()->changeScene(SceneManager::en_TollgateEditorScene);
+	SceneManager::getInstance()->changeScene(SceneManager::en_TollgateSelectScene);
+
     // run
     //director->runWithScene(scene);
 
